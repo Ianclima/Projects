@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>RPG dice</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    </head>
+    <body>
+        <p id="placeholder"></p>
+        <div>
+            <class img><image src="d6.png"></image</class>
+            <class img><image src="d8.png"></image</class>
+            <class img><image src="d10.png"></image</class>
+            <class img><image src="d12.png"></image</class>
+            <class img><image src="d20.png"></image</class>
+
+        </div>
+        <button id="d6">D6</button>
+        <button id="d8">D8</button>
+        <button id="d10">D10</button>
+        <button id="d12">D12</button>
+        <button id="d20">D20</button>
+        <script> var D6 = {
+            sides: 6,
+            roll: function () {
+              var randomd6 = Math.floor(Math.random() * this.sides) + 1;
+              return randomd6;
+            }
+          }
+          //Prints dice roll to the page
+
+          function printNumber(d6) {
+            var placeholder = document.getElementById('placeholder');
+            placeholder.innerHTML = d6;
+          }
+
+          var button = document.getElementById('d6');
+
+          button.onclick = function() {
+            var result = D6.roll();
+            printNumber(result);
+          };var D8 = {
+            sides: 8,
+            roll: function () {
+              var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+              return randomNumber;
+            }
+          }
+          //Prints dice roll to the page
+
+          function printNumber(number) {
+            var placeholder = document.getElementById('placeholder');
+            placeholder.innerHTML = number;
+          }
+
+          var button = document.getElementById('d8');
+
+          button.onclick = function() {
+            var result = D8.roll();
+            printNumber(result);
+          };var D10 = {
+            sides: 10,
+            roll: function () {
+              var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+              return randomNumber;
+            }
+          }
+          //Prints dice roll to the page
+
+          function printNumber(number) {
+            var placeholder = document.getElementById('placeholder');
+            placeholder.innerHTML = number;
+          }
+
+          var button = document.getElementById('d10');
+
+          button.onclick = function() {
+            var result = D10.roll();
+            printNumber(result);
+          };var D12 = {
+            sides: 12,
+            roll: function () {
+              var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+              return randomNumber;
+            }
+          }
+          //Prints dice roll to the page
+
+          function printNumber(number) {
+            var placeholder = document.getElementById('placeholder');
+            placeholder.innerHTML = number;
+          }
+
+          var button = document.getElementById('d12');
+
+          button.onclick = function() {
+            var result = D12.roll();
+            printNumber(result);
+          };var D20 = {
+            sides: 20,
+            roll: function () {
+              var randomNumber = Math.floor(Math.random() * this.sides) + 1;
+              return randomNumber;
+            }
+          }
+          //Prints dice roll to the page
+
+          function printNumber(number) {
+            var placeholder = document.getElementById('placeholder');
+            placeholder.innerHTML = number;
+          }
+
+          var button = document.getElementById('d20');
+
+          button.onclick = function() {
+            var result = D20.roll();
+            printNumber(result);
+          };</script>
+      </body>
+</html>
